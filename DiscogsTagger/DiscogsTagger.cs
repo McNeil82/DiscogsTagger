@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace DiscogsTagger
 {
-    public partial class Form1 : Form
+    public partial class DiscogsTagger : Form
     {
-        public Form1()
+        public DiscogsTagger()
         {
             InitializeComponent();
         }
