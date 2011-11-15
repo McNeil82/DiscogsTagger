@@ -61,16 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiscogsTagger.Components.cs">
-      <DependentUpon>DiscogsTagger.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DiscogsTagger.Events.cs">
-      <DependentUpon>DiscogsTagger.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="DiscogsClient.cs" />
     <Compile Include="DiscogsTagger.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiscogsTagger.Designer.cs">
+      <DependentUpon>DiscogsTagger.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

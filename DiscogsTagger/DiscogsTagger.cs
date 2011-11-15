@@ -12,25 +12,36 @@ namespace DiscogsTagger
 {
     public partial class DiscogsTagger : Form
     {
-        private string releaseNumber = "";
+        private DiscogsClient discogsClient = new DiscogsClient();
 
         public DiscogsTagger()
         {
             InitializeComponent();
         }
 
+        private void searchButtonClickEvent(object sender, EventArgs e)
+        {
+            handleReleaseNumber();
+        }
+
+        private void releaseNumberTextBoxKeyPressEvent(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                handleReleaseNumber();
+            }
+        }
+
         private void handleReleaseNumber()
         {
             if (validReleaseNumber())
             {
-                releaseNumber = resleaseNumberTextBox.Text;
+                debugTextBox.Text = discogsClient.getReleaseContent(resleaseNumberTextBox.Text);
             }
             else
             {
-                releaseNumber = "";
+                debugTextBox.Text = "";
             }
-
-            debugTextBox.Text = releaseNumber;
         }
 
         private bool validReleaseNumber()
