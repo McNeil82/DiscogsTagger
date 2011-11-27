@@ -12,7 +12,14 @@ namespace DiscogsTagger
     {
         private string url = "http://api.discogs.com/release/";
 
-        public Release getReleaseContent(string releaseNumber) {
+        public Release getRelease(string releaseNumber) {
+            string xmlString = gerReleaseFromDiscogs(releaseNumber);
+
+            return createRelease(xmlString);
+        }
+
+        private string gerReleaseFromDiscogs(string releaseNumber)
+        {
             string fullUrl = url + releaseNumber;
 
             HttpWebRequest webRequest = (HttpWebRequest)HttpWebRequest.Create(fullUrl);
@@ -20,12 +27,15 @@ namespace DiscogsTagger
             webRequest.Headers.Add(HttpRequestHeader.AcceptEncoding, "gzip");
             WebResponse webResponse = webRequest.GetResponse();
             StreamReader response = new StreamReader(webResponse.GetResponseStream());
-            string xmlString = response.ReadToEnd();
+            return response.ReadToEnd();
+        }
 
+        private static Release createRelease(string xmlString)
+        {
             XDocument xml = XDocument.Parse(xmlString);
             XElement release = xml.Element("resp").Element("release");
 
-            return new Release(release);
+            return ReleaseFactory.createRelease(release);
         }
     }
 }

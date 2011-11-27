@@ -10,13 +10,14 @@ namespace DiscogsTagger
     {
         public string Title
         {
-            private set;
+            set;
             get;
         }
 
-        public Release(XElement release)
+        public string Year
         {
-            Title = release.Element("title").Value;
+            set;
+            get;
         }
     }
 }

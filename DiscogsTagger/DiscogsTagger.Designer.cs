@@ -31,6 +31,9 @@
             this.resleaseNumberTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
             this.titleTextBox = new System.Windows.Forms.TextBox();
+            this.titleLabel = new System.Windows.Forms.Label();
+            this.yearTextBox = new System.Windows.Forms.TextBox();
+            this.yearLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resleaseNumberTextBox
@@ -58,11 +61,39 @@
             this.titleTextBox.Size = new System.Drawing.Size(100, 20);
             this.titleTextBox.TabIndex = 2;
             // 
+            // titleLabel
+            // 
+            this.titleLabel.AutoSize = true;
+            this.titleLabel.Location = new System.Drawing.Point(119, 43);
+            this.titleLabel.Name = "titleLabel";
+            this.titleLabel.Size = new System.Drawing.Size(27, 13);
+            this.titleLabel.TabIndex = 3;
+            this.titleLabel.Text = "Title";
+            // 
+            // yearTextBox
+            // 
+            this.yearTextBox.Location = new System.Drawing.Point(13, 67);
+            this.yearTextBox.Name = "yearTextBox";
+            this.yearTextBox.Size = new System.Drawing.Size(100, 20);
+            this.yearTextBox.TabIndex = 4;
+            // 
+            // yearLabel
+            // 
+            this.yearLabel.AutoSize = true;
+            this.yearLabel.Location = new System.Drawing.Point(119, 70);
+            this.yearLabel.Name = "yearLabel";
+            this.yearLabel.Size = new System.Drawing.Size(29, 13);
+            this.yearLabel.TabIndex = 5;
+            this.yearLabel.Text = "Year";
+            // 
             // DiscogsTagger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 437);
+            this.Controls.Add(this.yearLabel);
+            this.Controls.Add(this.yearTextBox);
+            this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.resleaseNumberTextBox);
@@ -79,5 +110,8 @@
         private System.Windows.Forms.TextBox resleaseNumberTextBox;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.TextBox titleTextBox;
+        private System.Windows.Forms.Label titleLabel;
+        private System.Windows.Forms.TextBox yearTextBox;
+        private System.Windows.Forms.Label yearLabel;
     }
 }

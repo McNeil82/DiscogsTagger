@@ -71,6 +71,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReleaseFactory.cs" />
     <EmbeddedResource Include="DiscogsTagger.resx">
       <DependentUpon>DiscogsTagger.cs</DependentUpon>
     </EmbeddedResource>
