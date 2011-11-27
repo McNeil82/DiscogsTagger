@@ -30,7 +30,7 @@
         {
             this.resleaseNumberTextBox = new System.Windows.Forms.TextBox();
             this.searchButton = new System.Windows.Forms.Button();
-            this.debugTextBox = new System.Windows.Forms.TextBox();
+            this.titleTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // resleaseNumberTextBox
@@ -51,20 +51,19 @@
             this.searchButton.UseVisualStyleBackColor = true;
             this.searchButton.Click += new System.EventHandler(this.searchButtonClickEvent);
             // 
-            // debugTextBox
+            // titleTextBox
             // 
-            this.debugTextBox.Location = new System.Drawing.Point(13, 39);
-            this.debugTextBox.Multiline = true;
-            this.debugTextBox.Name = "debugTextBox";
-            this.debugTextBox.Size = new System.Drawing.Size(259, 386);
-            this.debugTextBox.TabIndex = 2;
+            this.titleTextBox.Location = new System.Drawing.Point(13, 40);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.Size = new System.Drawing.Size(100, 20);
+            this.titleTextBox.TabIndex = 2;
             // 
             // DiscogsTagger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 437);
-            this.Controls.Add(this.debugTextBox);
+            this.Controls.Add(this.titleTextBox);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.resleaseNumberTextBox);
             this.Name = "DiscogsTagger";
@@ -72,12 +71,13 @@
             this.Text = "Discogs-Tagger";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
 
         private System.Windows.Forms.TextBox resleaseNumberTextBox;
         private System.Windows.Forms.Button searchButton;
-        private System.Windows.Forms.TextBox debugTextBox;
+        private System.Windows.Forms.TextBox titleTextBox;
     }
 }

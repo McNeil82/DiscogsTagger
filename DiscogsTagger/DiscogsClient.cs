@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Net;
 using System.IO;
+using System.Xml.Linq;
 
 namespace DiscogsTagger
 {
@@ -11,7 +12,7 @@ namespace DiscogsTagger
     {
         private string url = "http://api.discogs.com/release/";
 
-        public string getReleaseContent(string releaseNumber) {
+        public Release getReleaseContent(string releaseNumber) {
             string fullUrl = url + releaseNumber;
 
             HttpWebRequest webRequest = (HttpWebRequest)HttpWebRequest.Create(fullUrl);
@@ -19,7 +20,12 @@ namespace DiscogsTagger
             webRequest.Headers.Add(HttpRequestHeader.AcceptEncoding, "gzip");
             WebResponse webResponse = webRequest.GetResponse();
             StreamReader response = new StreamReader(webResponse.GetResponseStream());
-            return response.ReadToEnd();
+            string xmlString = response.ReadToEnd();
+
+            XDocument xml = XDocument.Parse(xmlString);
+            XElement release = xml.Element("resp").Element("release");
+
+            return new Release(release);
         }
     }
 }

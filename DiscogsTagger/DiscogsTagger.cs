@@ -36,11 +36,8 @@ namespace DiscogsTagger
         {
             if (validReleaseNumber())
             {
-                debugTextBox.Text = discogsClient.getReleaseContent(resleaseNumberTextBox.Text);
-            }
-            else
-            {
-                debugTextBox.Text = "";
+                Release release = discogsClient.getReleaseContent(resleaseNumberTextBox.Text);
+                titleTextBox.Text = release.Title;
             }
         }
 
