@@ -1,0 +1,94 @@
+<resp stat="ok" version="2.0">
+	<release id="1" status="Accepted">
+		<images>
+			<image height="600" type="primary" uri="http://api.discogs.com/image/R-1-1193812031.jpeg" uri150="http://api.discogs.com/image/R-150-1-1193812031.jpeg" width="600" />
+			<image height="600" type="secondary" uri="http://api.discogs.com/image/R-1-1193812053.jpeg" uri150="http://api.discogs.com/image/R-150-1-1193812053.jpeg" width="600" />
+			<image height="600" type="secondary" uri="http://api.discogs.com/image/R-1-1193812072.jpeg" uri150="http://api.discogs.com/image/R-150-1-1193812072.jpeg" width="600" />
+			<image height="600" type="secondary" uri="http://api.discogs.com/image/R-1-1193812091.jpeg" uri150="http://api.discogs.com/image/R-150-1-1193812091.jpeg" width="600" />
+		</images>
+		<artists>
+			<artist>
+				<name>Persuader, The</name>
+				<anv />
+				<join />
+				<role />
+				<tracks />
+			</artist>
+		</artists>
+		<title>Stockholm</title>
+		<labels>
+			<label catno="SK032" name="Svek" />
+		</labels>
+		<extraartists>
+			<artist>
+				<name>Jesper Dahlbäck</name>
+				<anv />
+				<join />
+				<role>Music By [All Tracks By]</role>
+				<tracks />
+			</artist>
+		</extraartists>
+		<formats>
+			<format name="Vinyl" qty="2">
+				<descriptions>
+					<description>12"</description>
+				</descriptions>
+			</format>
+		</formats>
+		<genres>
+			<genre>Electronic</genre>
+		</genres>
+		<styles>
+			<style>Deep House</style>
+		</styles>
+		<country>Sweden</country>
+		<released>1999-03-00</released>
+		<notes>Recorded at the Globe studio in Stockholm. 
+		The titles are the names of Stockholm's districts.
+		</notes>
+		<master_id>5427</master_id>
+		<data_quality>Correct</data_quality>
+		<tracklist>
+			<track>
+				<position>A</position>
+				<title>Östermalm</title>
+				<duration>4:45</duration>
+			</track>
+			<track>
+				<position>B1</position>
+				<title>Vasastaden</title>
+				<duration>6:11</duration>
+			</track>
+			<track>
+				<position>B2</position>
+				<title>Kungsholmen</title>
+				<duration>2:49</duration>
+			</track>
+			<track>
+				<position>C1</position>
+				<title>Södermalm</title>
+				<duration>5:38</duration>
+			</track>
+			<track>
+				<position>C2</position>
+				<title>Norrmalm</title>
+				<duration>4:52</duration>
+			</track>
+			<track>
+				<position>D</position>
+				<title>Gamla Stan</title>
+				<duration>5:16</duration>
+			</track>
+		</tracklist>
+		<videos>
+			<video duration="334" embed="true" src="http://www.youtube.com/watch?v=QVdDhOnoR8k">
+				<title>The Persuader-Stockholm-Sodermalm</title>
+				<description>The Persuader-Stockholm-Sodermalm</description>
+			</video>
+			<video duration="290" embed="true" src="http://www.youtube.com/watch?v=AHuQWcylaU4">
+				<title>The Persuader (Jesper Dahlbäck) - Östermalm</title>
+				<description>The Persuader (Jesper Dahlbäck) - Östermalm</description>
+			</video>
+		</videos>
+	</release>
+</resp>
