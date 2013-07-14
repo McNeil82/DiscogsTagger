@@ -34,6 +34,7 @@
             this.titleLabel = new System.Windows.Forms.Label();
             this.yearTextBox = new System.Windows.Forms.TextBox();
             this.yearLabel = new System.Windows.Forms.Label();
+            this.releaseNumberLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // resleaseNumberTextBox
@@ -46,7 +47,7 @@
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(197, 9);
+            this.searchButton.Location = new System.Drawing.Point(247, 10);
             this.searchButton.Name = "searchButton";
             this.searchButton.Size = new System.Drawing.Size(75, 23);
             this.searchButton.TabIndex = 1;
@@ -86,11 +87,21 @@
             this.yearLabel.TabIndex = 5;
             this.yearLabel.Text = "Year";
             // 
+            // releaseNumberLabel
+            // 
+            this.releaseNumberLabel.AutoSize = true;
+            this.releaseNumberLabel.Location = new System.Drawing.Point(119, 16);
+            this.releaseNumberLabel.Name = "releaseNumberLabel";
+            this.releaseNumberLabel.Size = new System.Drawing.Size(86, 13);
+            this.releaseNumberLabel.TabIndex = 6;
+            this.releaseNumberLabel.Text = "Release Number";
+            // 
             // DiscogsTagger
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 437);
+            this.ClientSize = new System.Drawing.Size(334, 437);
+            this.Controls.Add(this.releaseNumberLabel);
             this.Controls.Add(this.yearLabel);
             this.Controls.Add(this.yearTextBox);
             this.Controls.Add(this.titleLabel);
@@ -113,5 +124,6 @@
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.TextBox yearTextBox;
         private System.Windows.Forms.Label yearLabel;
+        private System.Windows.Forms.Label releaseNumberLabel;
     }
 }
